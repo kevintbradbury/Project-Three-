@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A061A321DA48F1700FB31E7 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */; };
+		0A061A341DA4935800FB31E7 /* GamesListClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A061A331DA4935800FB31E7 /* GamesListClass.swift */; };
 		8B630D201D9C8C74003D0006 /* NewAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D1F1D9C8C74003D0006 /* NewAccount.storyboard */; };
 		8B630D231D9C8D28003D0006 /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D211D9C8D28003D0006 /* Checkout.storyboard */; };
 		8B630D281D9C9063003D0006 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D261D9C9063003D0006 /* Home.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		0A061A331DA4935800FB31E7 /* GamesListClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListClass.swift; sourceTree = "<group>"; };
 		8B630D1F1D9C8C74003D0006 /* NewAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewAccount.storyboard; sourceTree = "<group>"; };
 		8B630D221D9C8D28003D0006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Checkout.storyboard; sourceTree = "<group>"; };
 		8B630D271D9C9063003D0006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				8B8450191D9B4770000609D8 /* ViewController.swift */,
+				0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */,
+				0A061A331DA4935800FB31E7 /* GamesListClass.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A061A321DA48F1700FB31E7 /* GamesListViewController.swift in Sources */,
 				8BB06FB11D9ED81C007798D6 /* GameInfo.swift in Sources */,
+				0A061A341DA4935800FB31E7 /* GamesListClass.swift in Sources */,
 				8B84501A1D9B4770000609D8 /* ViewController.swift in Sources */,
 				8B8450181D9B4770000609D8 /* AppDelegate.swift in Sources */,
 			);
