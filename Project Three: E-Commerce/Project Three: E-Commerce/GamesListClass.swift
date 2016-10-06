@@ -43,7 +43,7 @@ struct GamesList {
         
         guard let resultsDictionary = dictionary["searchResult"] as? NSDictionary else {return nil }
         guard let itemDictionary = resultsDictionary["item"] as? NSDictionary else { return nil }
-        guard let itemId = itemDictionary["itemId"] as? NSDictionary else { return nil }
+//        guard let itemId = itemDictionary["itemId"] as? NSDictionary else { return nil }
 
 //        guard let title = itemDictionary["title"] as? String,
 //        let galleryURL = dictionary["galleryURL"] as? NSDictionary,

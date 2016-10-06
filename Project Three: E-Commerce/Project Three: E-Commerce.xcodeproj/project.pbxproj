@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A061A321DA48F1700FB31E7 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */; };
 		0A061A341DA4935800FB31E7 /* GamesListClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A061A331DA4935800FB31E7 /* GamesListClass.swift */; };
+		0AA178441DA5CA6D00AA9F97 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA178431DA5CA6D00AA9F97 /* GameListCell.swift */; };
 		8B630D201D9C8C74003D0006 /* NewAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D1F1D9C8C74003D0006 /* NewAccount.storyboard */; };
 		8B630D231D9C8D28003D0006 /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D211D9C8D28003D0006 /* Checkout.storyboard */; };
 		8B630D281D9C9063003D0006 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D261D9C9063003D0006 /* Home.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		0A061A331DA4935800FB31E7 /* GamesListClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListClass.swift; sourceTree = "<group>"; };
+		0AA178431DA5CA6D00AA9F97 /* GameListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
 		8B630D1F1D9C8C74003D0006 /* NewAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewAccount.storyboard; sourceTree = "<group>"; };
 		8B630D221D9C8D28003D0006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Checkout.storyboard; sourceTree = "<group>"; };
 		8B630D271D9C9063003D0006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				8B8450191D9B4770000609D8 /* ViewController.swift */,
 				0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */,
+				0AA178431DA5CA6D00AA9F97 /* GameListCell.swift */,
 				0A061A331DA4935800FB31E7 /* GamesListClass.swift */,
 			);
 			name = "View Controllers";
@@ -138,7 +141,7 @@
 				TargetAttributes = {
 					8B8450131D9B4770000609D8 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = P257QVWC92;
+						DevelopmentTeam = 3TAADZBCK9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A061A321DA48F1700FB31E7 /* GamesListViewController.swift in Sources */,
+				0AA178441DA5CA6D00AA9F97 /* GameListCell.swift in Sources */,
 				8BB06FB11D9ED81C007798D6 /* GameInfo.swift in Sources */,
 				0A061A341DA4935800FB31E7 /* GamesListClass.swift in Sources */,
 				8B84501A1D9B4770000609D8 /* ViewController.swift in Sources */,
@@ -325,7 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P257QVWC92;
+				DEVELOPMENT_TEAM = 3TAADZBCK9;
 				INFOPLIST_FILE = "Project Three: E-Commerce/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project-Three--E-Commerce";
@@ -338,7 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P257QVWC92;
+				DEVELOPMENT_TEAM = 3TAADZBCK9;
 				INFOPLIST_FILE = "Project Three: E-Commerce/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project-Three--E-Commerce";
