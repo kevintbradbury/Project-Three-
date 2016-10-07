@@ -23,9 +23,7 @@ class GamesListViewController: UITableViewController {
     
     var inputKeyword = "crash%20bandicoot"
     
-    var itemsByKeyWordsArray = [String]()
-    
-    var searchResultItemArray = [String]()
+    var gameInfoArray: [ItemInfo] = []
     
     func apiCall() {
         
@@ -33,45 +31,66 @@ class GamesListViewController: UITableViewController {
         
         let url = URL(string: emptyString)!
 
-//        var request = URLRequest.init(url: url)
-//        
-//        request.setValue("", forHTTPHeaderField: "Authorization")
-//        
-//        let session = URLSession.shared
-//
         guard let data = try? Data(contentsOf: url),
             let json = (try? JSONSerialization.jsonObject(with: data, options: .mutableContainers)) as? NSDictionary else {
                 return
         }
         
-        guard let array = (json["searchResults"]) as? NSArray else { return }
+        guard let findItemsByKeywordsResponse = json["findItemsByKeywordsResponse"] as? NSArray else { return }
         
-        for i in array {
+        for index in findItemsByKeywordsResponse {
             
-            guard let dictionary = i as? NSDictionary else { continue }
+            guard let dictionary = index as? NSDictionary else { return }
             
-            print(dictionary)
+            if let searchResult = dictionary["searchResult"] as? NSArray {
+                
+                for index in searchResult {
+                    
+                    guard let dictionary = index as? NSDictionary else { return }
+                    
+                    guard let item = dictionary["item"] as? NSArray else { return }
+                    
+                    for index in item {
+                        
+                        guard let dictionary = index as? NSDictionary else { return }
+                        
+                        guard let gameInfo = ItemInfo.fromjson(dictionary: dictionary) else {
+                            return
+                        }
+                        
+                        gameInfoArray.append(gameInfo)
+                    }
+                    
+                }
+
+                return
+            }
             
-            guard GamesList.fromjson(dictionary: dictionary) != nil
-                else {
-                    print("error in guard")
-                    return }
             
-//            guard let newData = try? Data(contentsOf: ebayDictionary.galleryURL)
-//                else {return}
+
+//            guard let items = dictionary["searchResult"] as? NSDictionary else {
+//                return }
+//            print(items)
+//            for index in items {
 //            
-//            searchResultItemArray.append(ebayDictionary)
+//                guard let dictionary = index as? NSDictionary else {return}
+//                
+//                guard let game = ItemInfo.fromjson(dictionary: dictionary) else {
+//                    print("error in guard")
+//                    return }
+//                
+//                gameInfoArray.append(game)
+//                
+//            }
+            
+            
             
             
         }
         
-        
-//        self.mainOperation.addOperation {
-//        }
-        
     }
     
-    //dataTask.resume()
+
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

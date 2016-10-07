@@ -9,60 +9,49 @@
 import Foundation
 import UIKit
 
-struct GamesList {
+struct ItemInfo {
     
-    let findItemsByKeywordsResponse: NSDictionary
-        let searchResult: NSDictionary
-            let item: NSDictionary
-                let itemId: NSDictionary
-                let title: NSDictionary
-                let galleryURL: NSDictionary
-                let viewItemURL: NSDictionary
-                let autoPay: NSDictionary
-                let postalCode: NSDictionary
-                let sellingStatus: NSDictionary
-                    let currentPrice: NSDictionary
-                        let __value__: NSDictionary
+    let itemId: NSObject
+    let title: NSObject
+    let galleryURL: NSObject
+    let viewItemURL: NSObject
+    let autoPay: NSObject
+    let postalCode: NSObject
+    let sellingStatus: NSObject
     
-    static func fromjson(dictionary: NSDictionary) -> GamesList? {
-        guard let findItemsByKeywordsResponse = dictionary["findItemsByKeywordsResponse"] as? NSDictionary,
-        let searchResult = dictionary["searchResult"] as? NSDictionary,
-        let item = dictionary["item"] as? NSDictionary,
-        let itemId = dictionary["itemId"] as? NSDictionary,
-        let title = dictionary["title"] as? NSDictionary,
-        let galleryURL = dictionary["galleryURL"] as? NSDictionary,
-        let viewItemURL = dictionary["viewItemURL"] as? NSDictionary,
-        let autoPay = dictionary["autoPay"] as? NSDictionary,
-        let postalCode = dictionary["postalCode"] as? NSDictionary,
-        let sellingStatus = dictionary["sellingStatus"] as? NSDictionary,
-        let currentPrice = dictionary["currentPrice"] as? NSDictionary,
-            let __value__ = dictionary["__value__"] as? NSDictionary else {
+    static func fromjson(dictionary: NSDictionary) -> ItemInfo? {
+        guard let itemId = dictionary["itemId"] as? NSObject,
+            let title = dictionary["title"] as? NSObject,
+            let galleryURL = dictionary["galleryURL"] as? NSObject,
+            let viewItemURL = dictionary["viewItemURL"] as? NSObject,
+            let autoPay = dictionary["autoPay"] as? NSObject,
+            let postalCode = dictionary["postalCode"] as? NSObject,
+            let sellingStatus = dictionary["sellingStatus"] as? NSObject else {
                 print("Guard failed on fromJson()")
                 return nil
         }
         
-        guard let resultsDictionary = dictionary["searchResult"] as? NSDictionary else {return nil }
-        guard let itemDictionary = resultsDictionary["item"] as? NSDictionary else { return nil }
-//        guard let itemId = itemDictionary["itemId"] as? NSDictionary else { return nil }
-
-//        guard let title = itemDictionary["title"] as? String,
-//        let galleryURL = dictionary["galleryURL"] as? NSDictionary,
-//        let viewItemURL = dictionary["viewItemURL"] as? NSDictionary,
-//        let autoPay = dictionary["autoPay"] as? NSDictionary,
-//        let postalCode = dictionary["postalCode"] as? NSDictionary,
-//        let sellingStatus = dictionary["sellingStatus"] as? NSDictionary,
-//        let currentPrice = dictionary["currentPrice"] as? NSDictionary,
-//        let __value__ = dictionary["__value__"] as? NSDictionary
+        guard let priceArray = dictionary["sellingStatus"] as? NSArray else { return nil }
+        
+        for i in priceArray {
+            
+            guard let dictionary = i as? NSDictionary else { return nil }
+            
+            guard let currentPriceArray = dictionary["currentPrice"] as? NSArray else { return nil }
+//            for i in currentPriceArray {
+//                
+//                guard let dictionary = i as? NSDictionary else { return nil }
+//                
+//                guard let value = currentPriceArray["__value__"] as? String else { return nil }
+//                
+//            }
+        }
         
         
-        return GamesList(findItemsByKeywordsResponse: findItemsByKeywordsResponse, searchResult: searchResult, item: item, itemId: itemId, title: title, galleryURL: galleryURL, viewItemURL: viewItemURL, autoPay: autoPay, postalCode: postalCode, sellingStatus: sellingStatus, currentPrice: currentPrice, __value__: __value__)
+        return ItemInfo(itemId: itemId, title: title, galleryURL: galleryURL, viewItemURL: viewItemURL, autoPay: autoPay, postalCode: postalCode, sellingStatus: sellingStatus)
         
     }
-
-
-
-
-
-
-
+    
+    
+    
 }
