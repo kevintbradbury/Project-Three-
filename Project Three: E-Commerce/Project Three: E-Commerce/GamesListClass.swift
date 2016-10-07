@@ -33,19 +33,20 @@ struct ItemInfo {
         
         guard let priceArray = dictionary["sellingStatus"] as? NSArray else { return nil }
         
-        for i in priceArray {
-            
-            guard let dictionary = i as? NSDictionary else { return nil }
-            
-            guard let currentPriceArray = dictionary["currentPrice"] as? NSArray else { return nil }
-//            for i in currentPriceArray {
-//                
-//                guard let dictionary = i as? NSDictionary else { return nil }
-//                
-//                guard let value = currentPriceArray["__value__"] as? String else { return nil }
-//                
-//            }
-        }
+//        for i in priceArray {
+//            
+//            guard let dictionary = i as? NSDictionary else { return nil }
+//            
+//            guard let currentPriceArray = dictionary["currentPrice"] as? NSArray else { return nil }
+//
+////            for i in currentPriceArray {
+////                
+////                guard let dictionary = i as? NSDictionary else { return nil }
+////                
+////                guard let value = currentPriceArray["__value__"] as? String else { return nil }
+////                
+////            }
+//        }
         
         
         return ItemInfo(itemId: itemId, title: title, galleryURL: galleryURL, viewItemURL: viewItemURL, autoPay: autoPay, postalCode: postalCode, sellingStatus: sellingStatus)

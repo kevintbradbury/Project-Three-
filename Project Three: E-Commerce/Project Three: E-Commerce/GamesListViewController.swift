@@ -21,7 +21,7 @@ class GamesListViewController: UITableViewController {
     
     var keyword = "keywords="
     
-    var inputKeyword = "crash%20bandicoot"
+    var inputKeyword = "nintendo%2064"
     
     var gameInfoArray: [ItemInfo] = []
     
@@ -56,9 +56,11 @@ class GamesListViewController: UITableViewController {
                         
                         guard let gameInfo = ItemInfo.fromjson(dictionary: dictionary) else {
                             return
+                        
                         }
                         
                         gameInfoArray.append(gameInfo)
+                        print(gameInfoArray)
                     }
                     
                 }
@@ -101,6 +103,8 @@ class GamesListViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let gameInfo = gameInfoArray[indexPath.row]
         
         return cell
     }
