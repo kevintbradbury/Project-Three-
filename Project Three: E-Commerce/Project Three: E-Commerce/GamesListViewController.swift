@@ -54,7 +54,7 @@ class GamesListViewController: UITableViewController {
                         
                         guard let dictionary = index as? NSDictionary else { return }
                         
-                        guard let gameInfo = ItemInfo.fromjson(dictionary: dictionary) else {
+                        guard let gameInfo = ItemInfo.fromjson(dictionary) else {
                             return
                         
                         }

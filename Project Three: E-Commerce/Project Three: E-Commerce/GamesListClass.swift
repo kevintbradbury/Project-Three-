@@ -19,7 +19,7 @@ struct ItemInfo {
     let postalCode: NSObject
     let sellingStatus: NSObject
     
-    static func fromjson(dictionary: NSDictionary) -> ItemInfo? {
+    static func fromjson(_ dictionary: NSDictionary) -> ItemInfo? {
         guard let itemId = dictionary["itemId"] as? NSObject,
             let title = dictionary["title"] as? NSObject,
             let galleryURL = dictionary["galleryURL"] as? NSObject,

@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		0A061A321DA48F1700FB31E7 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */; };
 		0A061A341DA4935800FB31E7 /* GamesListClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A061A331DA4935800FB31E7 /* GamesListClass.swift */; };
+		0A7EC27B1DAB25DF006AF539 /* AccountInfo~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7EC26B1DAB25DF006AF539 /* AccountInfo~.storyboard */; };
+		0A7EC27E1DAB25DF006AF539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7EC26E1DAB25DF006AF539 /* Assets.xcassets */; };
+		0A7EC27F1DAB25DF006AF539 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0A7EC26F1DAB25DF006AF539 /* Base.lproj */; };
+		0A7EC2891DAB25DF006AF539 /* Home~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7EC2791DAB25DF006AF539 /* Home~.storyboard */; };
+		0A7EC28A1DAB25DF006AF539 /* NewAccount~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7EC27A1DAB25DF006AF539 /* NewAccount~.storyboard */; };
 		0AA178441DA5CA6D00AA9F97 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA178431DA5CA6D00AA9F97 /* GameListCell.swift */; };
+		0AA3BEC51DAC235200ECDCDF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA3BEC31DAC235200ECDCDF /* FBSDKCoreKit.framework */; };
+		0AA3BEC61DAC235200ECDCDF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA3BEC41DAC235200ECDCDF /* FBSDKLoginKit.framework */; };
 		8B630D201D9C8C74003D0006 /* NewAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D1F1D9C8C74003D0006 /* NewAccount.storyboard */; };
 		8B630D231D9C8D28003D0006 /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D211D9C8D28003D0006 /* Checkout.storyboard */; };
 		8B630D281D9C9063003D0006 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B630D261D9C9063003D0006 /* Home.storyboard */; };
@@ -24,7 +31,15 @@
 /* Begin PBXFileReference section */
 		0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		0A061A331DA4935800FB31E7 /* GamesListClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListClass.swift; sourceTree = "<group>"; };
+		0A7EC26B1DAB25DF006AF539 /* AccountInfo~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "AccountInfo~.storyboard"; sourceTree = "<group>"; };
+		0A7EC26E1DAB25DF006AF539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A7EC26F1DAB25DF006AF539 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		0A7EC2791DAB25DF006AF539 /* Home~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Home~.storyboard"; sourceTree = "<group>"; };
+		0A7EC27A1DAB25DF006AF539 /* NewAccount~.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "NewAccount~.storyboard"; sourceTree = "<group>"; };
 		0AA178431DA5CA6D00AA9F97 /* GameListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
+		0AA3BEC31DAC235200ECDCDF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0AA3BEC41DAC235200ECDCDF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0AA3BECD1DAC279D00ECDCDF /* Project Three: E-Commerce-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project Three: E-Commerce-Bridging-Header.h"; sourceTree = "<group>"; };
 		8B630D1F1D9C8C74003D0006 /* NewAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewAccount.storyboard; sourceTree = "<group>"; };
 		8B630D221D9C8D28003D0006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Checkout.storyboard; sourceTree = "<group>"; };
 		8B630D271D9C9063003D0006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -43,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA3BEC61DAC235200ECDCDF /* FBSDKLoginKit.framework in Frameworks */,
+				0AA3BEC51DAC235200ECDCDF /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +88,11 @@
 				0A061A311DA48F1700FB31E7 /* GamesListViewController.swift */,
 				0AA178431DA5CA6D00AA9F97 /* GameListCell.swift */,
 				0A061A331DA4935800FB31E7 /* GamesListClass.swift */,
+				0A7EC26B1DAB25DF006AF539 /* AccountInfo~.storyboard */,
+				0A7EC26E1DAB25DF006AF539 /* Assets.xcassets */,
+				0A7EC26F1DAB25DF006AF539 /* Base.lproj */,
+				0A7EC2791DAB25DF006AF539 /* Home~.storyboard */,
+				0A7EC27A1DAB25DF006AF539 /* NewAccount~.storyboard */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -105,6 +127,9 @@
 				8B630D211D9C8D28003D0006 /* Checkout.storyboard */,
 				8B8450201D9B4770000609D8 /* LaunchScreen.storyboard */,
 				8B8450231D9B4770000609D8 /* Info.plist */,
+				0AA3BEC31DAC235200ECDCDF /* FBSDKCoreKit.framework */,
+				0AA3BEC41DAC235200ECDCDF /* FBSDKLoginKit.framework */,
+				0AA3BECD1DAC279D00ECDCDF /* Project Three: E-Commerce-Bridging-Header.h */,
 			);
 			path = "Project Three: E-Commerce";
 			sourceTree = "<group>";
@@ -142,6 +167,7 @@
 					8B8450131D9B4770000609D8 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3TAADZBCK9;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -171,10 +197,15 @@
 			files = (
 				8B630D281D9C9063003D0006 /* Home.storyboard in Resources */,
 				8B630D231D9C8D28003D0006 /* Checkout.storyboard in Resources */,
+				0A7EC27F1DAB25DF006AF539 /* Base.lproj in Resources */,
+				0A7EC28A1DAB25DF006AF539 /* NewAccount~.storyboard in Resources */,
+				0A7EC2891DAB25DF006AF539 /* Home~.storyboard in Resources */,
 				8B8450221D9B4770000609D8 /* LaunchScreen.storyboard in Resources */,
 				8B84501F1D9B4770000609D8 /* Assets.xcassets in Resources */,
+				0A7EC27B1DAB25DF006AF539 /* AccountInfo~.storyboard in Resources */,
 				8B84501D1D9B4770000609D8 /* Main.storyboard in Resources */,
 				8B630D201D9C8C74003D0006 /* NewAccount.storyboard in Resources */,
+				0A7EC27E1DAB25DF006AF539 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +289,11 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/k/Documents/Repositories/GA-iOS/MyProjects/Project-Three-/Project",
+					"Three:",
+					"E-Commerce",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -308,6 +344,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/k/Documents/Repositories/GA-iOS/MyProjects/Project-Three-/Project",
+					"Three:",
+					"E-Commerce",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -329,11 +370,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3TAADZBCK9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+				);
 				INFOPLIST_FILE = "Project Three: E-Commerce/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project-Three--E-Commerce";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project Three: E-Commerce/Project Three: E-Commerce-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -342,11 +401,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3TAADZBCK9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+					"$(PROJECT_DIR)/Project\\ Three:\\ E-Commerce",
+				);
 				INFOPLIST_FILE = "Project Three: E-Commerce/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project-Three--E-Commerce";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project Three: E-Commerce/Project Three: E-Commerce-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
